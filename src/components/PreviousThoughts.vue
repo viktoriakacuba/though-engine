@@ -1,6 +1,6 @@
 <template>
   <div class="mt-8">
-    <h2 class="text-lg font-semibold mb-2">Previous Thoughts:</h2>
+    <h2 class="text-lg font-semibold mb-2" v-if="history.length">Previous Thoughts:</h2>
     <ul class="space-y-2 max-h-64 overflow-y-auto pr-1">
       <li
         v-for="(entry, index) in props.history"
